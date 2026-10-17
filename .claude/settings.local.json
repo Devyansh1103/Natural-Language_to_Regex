@@ -58,7 +58,13 @@
       "PowerShell(..\\\\.venv\\\\Scripts\\\\python.exe -m pytest -q -p no:cacheprovider 2>&1 | Select-String -Pattern \"^\\(FAILED|ERROR\\)|passed|failed\" | Select-Object -First 30 | ForEach-Object { $_.Line.Substring\\(0, [Math]::Min\\(220, $_.Line.Length\\)\\) })",
       "PowerShell(Remove-Item -LiteralPath \"D:\\\\JOVAC\\\\Regex_JOVAC\\\\backend_placeholder_do_not_create.txt\" -Confirm:$false)",
       "PowerShell(..\\\\.venv\\\\Scripts\\\\python.exe -m pytest -q -p no:cacheprovider 2>&1 | Select-String -Pattern \"^\\(FAILED|ERROR\\)|passed|failed|^E  \" | Select-Object -First 30 | ForEach-Object { $_.Line.Substring\\(0, [Math]::Min\\(220, $_.Line.Length\\)\\) })",
-      "PowerShell(\"`.env present: $\\(Test-Path ..\\\\.env\\)\"; $env:PYTHONPATH = \\(Get-Location\\).Path; ..\\\\.venv\\\\Scripts\\\\python.exe \"C:\\\\Users\\\\ADMIN\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--JOVAC-Regex-JOVAC\\\\067d2578-7950-42c8-b238-153e00d27b75\\\\scratchpad\\\\verify_045.py\" 2>&1 | ForEach-Object { \"$_\" })"
+      "PowerShell(\"`.env present: $\\(Test-Path ..\\\\.env\\)\"; $env:PYTHONPATH = \\(Get-Location\\).Path; ..\\\\.venv\\\\Scripts\\\\python.exe \"C:\\\\Users\\\\ADMIN\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--JOVAC-Regex-JOVAC\\\\067d2578-7950-42c8-b238-153e00d27b75\\\\scratchpad\\\\verify_045.py\" 2>&1 | ForEach-Object { \"$_\" })",
+      "Bash(../.venv/Scripts/python.exe --version)",
+      "Bash(../.venv/Scripts/python.exe -m pytest -q -p no:cacheprovider)",
+      "Bash(../.venv/Scripts/python.exe -m pytest -q -p no:cacheprovider -m e2e)",
+      "Bash(PYTHONPATH=. ../.venv/Scripts/python.exe \"C:/Users/ADMIN/AppData/Local/Temp/claude/d--JOVAC-Regex-JOVAC/cd3e12a4-8401-412f-9a74-266467fd0c7f/scratchpad/probe.py\")",
+      "Bash(PYTHONPATH=. ../.venv/Scripts/python.exe -c ' *)",
+      "Bash(PYTHONPATH=. ../.venv/Scripts/python.exe \"C:/Users/ADMIN/AppData/Local/Temp/claude/d--JOVAC-Regex-JOVAC/cd3e12a4-8401-412f-9a74-266467fd0c7f/scratchpad/anchor.py\")"
     ]
   }
 }
